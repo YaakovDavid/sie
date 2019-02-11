@@ -1,0 +1,258 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+header{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  padding-top: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.slogan > span{
+  font-size: 25px;
+  margin: 0 10px;
+}
+
+.slogan{
+  font-size: 15px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+
+.header-left a {
+  float: right;
+  margin: 5px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+.sub-header {
+  background-color: rgb(43, 117, 167);
+  height: 20px;
+  padding: 7px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+
+.sub-header > span > a{
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border-right: 0.1px solid white;
+}
+
+.sub-header > span > a:hover{
+  color: rgb(19, 66, 97);
+}
+
+
+.search-block{
+  float: right;
+  height: 30px;
+}
+.search-block input{
+  height: 30px;
+  width: 200px;
+  border-radius: 8px;
+  padding: 5px;
+  border: 1px solid rgb(3, 3, 46);
+  position: relative;
+  bottom: 5px;
+  outline: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(73, 160, 73);
+}
+
+.search-block button{
+  height: 30px;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: rgb(73, 160, 73);
+  border: 1px solid rgb(73, 160, 73);
+  color: white;
+  position: relative;
+  bottom: 5px;
+  outline: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.search-block button:hover{
+  height: 30px;
+ background-color: rgb(28, 75, 28);
+}
+
+main{
+  width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 30px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      "banner banner video"
+      "bestsellers bestsellers video"
+      "bestsellers bestsellers progress"
+      ". . progress"
+      ". . ."
+      ". . ."
+      "footer footer footer"
+}
+
+.vids{
+  width: 360;
+  height: 235;
+  grid-area: video;
+}
+
+.slideshow{
+  position: relative;
+  width: 100%;
+  height: 250px;
+  grid-area: banner;
+}
+
+.works-in-progress{
+  grid-area: progress;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.bestsellers{
+  grid-area: bestsellers;
+}
+
+.bestsellers > ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bestsellers > ul > li{
+  height: 300px;
+  width: 30%;
+  border: 1px solid grey;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.bestsellers-title{
+  font-size: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid grey;
+  text-align: center;
+}
+
+.progress-heading{
+  font-size: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid grey;
+  text-align: center;
+}
+
+.prgress-body{
+  margin-top: 10px;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.vid-description{
+  font-size: 14px;
+  display: block;
+  color: grey;
+  font-weight: 800;
+}
+
+.banner-img{
+  width: 100%;
+  height: 250px;
+  /* border-radius: 15px; */
+}
+
+.arrow-btn{
+  width: 5%;
+  position: absolute;
+  bottom: 40%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline:black;
+  font-size: 50px;
+  outline: none;
+  z-index: 2;
+}
+
+.left{ left: 0; }
+.right{ right: 0; }
+
+
+
+footer{
+  grid-area: footer;
+  background-color: black;
+  height: 100px;
+}
+
+.footer-info{
+  width: 100%;
+  /* margin: 0 auto; */
+  background-color: black;
+}
+
+.footer-info > div{
+  width: 1000px;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  height: 100px;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-address{
+  text-transform: uppercase;
+}
+
+
+
+#szlider{
+  width: 95%;
+  height: 30px;
+  border: 1px solid #6ab88c;
+  overflow: hidden;
+  position: absolute;
+  bottom: 5px;
+  margin-left: 5px;
+  border-radius: 8px;
+}
+
+#szliderbar{
+  width: 37%;
+  height: 30px;
+  border-right: 1px solid #000000;
+  background: #6ab88c;
+}
+
+#szazalek {
+  color: #000000;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+  left: 25px;
+  position: relative;
+  top: -20px;
+}
