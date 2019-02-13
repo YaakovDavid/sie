@@ -1,0 +1,206 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+header{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  padding-top: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.slogan > span{
+  font-size: 25px;
+  margin: 0 10px;
+}
+
+.slogan{
+  font-size: 15px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+
+.header-left a {
+  float: right;
+  margin: 5px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+.sub-header {
+  background-color: rgb(43, 117, 167);
+  height: 20px;
+  padding: 7px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  margin-bottom: 50px;
+  /* width: 1440px; */
+}
+
+.sub-header > span > a{
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border-right: 0.1px solid white;
+}
+
+.sub-header > span > a:hover{
+  color: rgb(19, 66, 97);
+}
+
+
+.search-block{
+  float: right;
+  height: 30px;
+}
+.search-block input{
+  height: 30px;
+  width: 200px;
+  padding: 5px;
+  border: 1px solid rgb(3, 3, 46);
+  position: relative;
+  bottom: 5px;
+  outline: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(73, 160, 73);
+}
+
+.search-block button{
+  height: 30px;
+  padding: 5px;
+  background-color: rgb(73, 160, 73);
+  border: 1px solid rgb(73, 160, 73);
+  color: white;
+  position: relative;
+  bottom: 5px;
+  outline: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.search-block button:hover{
+  height: 30px;
+ background-color: rgb(28, 75, 28);
+}
+
+
+
+
+main{
+  width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 30px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+     /* "slideshow slideshow slideshow" */
+     "slideshow slideshow slideshow"
+      "bestsellers bestsellers sidemenu"
+      "bestsellers bestsellers sidemenu"
+      "bestsellers bestsellers donate"
+      "footer footer footer"
+}
+
+.arrow-btn{
+  width: 5%;
+  position: absolute;
+  bottom: 40%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline:black;
+  font-size: 50px;
+  outline: none;
+  z-index: 2;
+}
+
+.left{ left: 0; }
+.right{ right: 0; }
+
+.slideshow{
+  position: relative;
+  width: 100%;
+  height: 250px;
+  grid-area: slideshow;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.banner-img{
+  width: 100%;
+  height: 250px;
+  /* border-radius: 15px; */
+}
+
+.donate{
+  margin-top: 20px;
+    grid-area: donate;
+}
+
+.sidemenu{
+  margin-top: 14px;
+  grid-area: sidemenu;
+  background-color: whitesmoke;
+}
+
+
+.bestsellers{
+  grid-area: bestsellers;
+}
+
+.bestsellers > ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bestsellers > ul > li{
+  height: 300px;
+  width: 24%;
+  /* border: 1px solid grey; */
+  margin-bottom: 15px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bestsellers-title{
+  font-size: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid grey;
+  text-align: center;
+}
+
+
+
+
+
+
+footer{
+  width: 100%;
+}
+
+.footer-info > div {
+    width: 100%;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    height: 100px;
+    /* padding: 20px; */
+    text-align: center;
+    padding-top: 20px;
+}
+
+
